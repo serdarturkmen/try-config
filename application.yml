@@ -3,6 +3,7 @@ eureka:
     instance-id: ${spring.application.name}:${random.int}
     hostname: ${vcap.application.uris[0]}
     port:80
+    
   client:
     serviceUrl:
       defaultZone: https://discovery-server.cfapps.io/eureka/
