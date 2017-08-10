@@ -1,8 +1,6 @@
 eureka:
   instance:
     instance-id: ${spring.application.name}:${random.int}
-    hostname: ${vcap.application.uris[0]}
-    non-secure-port: 80
     
   client:
     serviceUrl:
